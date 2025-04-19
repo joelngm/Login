@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+</head>
+<body>
+
+  <form id="loginForm">
+    <h2>Login</h2>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="checkbox" name="remember"> Remember me<br><br>
+
+    <!-- 👇 This link will trigger JavaScript and redirect with data -->
+    <button type="button" onclick="submitForm()">Register</button>
+  </form>
+
+  <script>
+    function submitForm() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Redirect to display page with query parameters
+      window.location.href = `display.html?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`;
+    }
+  </script>
+
+</body>
+</html>

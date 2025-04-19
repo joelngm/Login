@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Info</title>
+</head>
+<body>
+
+  <h2>Your Submitted Information</h2>
+  <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+  <p><strong>Password:</strong> <span id="displayPassword"></span></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("displayUsername").textContent = params.get("username") || "N/A";
+    document.getElementById("displayPassword").textContent = params.get("password") || "N/A";
+  </script>
+
+</body>
+</html>
