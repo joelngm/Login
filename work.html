@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>login form</title>
+        <header>
+            <a href="Home.html">Home</a>
+            <h1>LOGIN</h1>
+        </header>
+        <style>
+            body{
+                background-color: cornflowerblue;
+                text-align: center;
+                margin-top: 200px;
+                color: black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: large;
+                font-weight: bold;
+                font-style: italic;
+            }
+            div{
+                display: block;
+                margin-top: 10px;
+
+            }
+            input{
+              
+                text-align:  top;
+            }
+            button:hover{
+text-decoration: rgb(71, 108, 140);
+text-decoration: underline;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <form>
+            <div>
+        <label for="Username">Username:</label>
+        <input type="text" name="username" value="username or Email" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="text" name="password" value="password" required>
+    </div>
+    <div>
+        <label for="checkbox">remember me</label>
+        <input type="checkbox" required>
+    </div>
+    <div>
+       <button type="submit">LOGIN</button>
+    </div>
+    </form>
+    </body>
+</html>
